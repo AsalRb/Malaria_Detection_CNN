@@ -3,8 +3,13 @@
 
 ## Project Overview
 
-Malaria is a life-threatening disease caused by parasites transmitted through the bites of infected mosquitoes. Early and accurate detection is critical for effective treatment. This project leverages CNNs to analyze blood cell images and automatically classify them.
+Malaria is a life-threatening disease caused by Plasmodium parasites and remains a major global health challenge. Manual examination of blood smears under a microscope is time-consuming and highly dependent on expert knowledge.
 
+In this project, a CNN model is trained to:
+
+- Learn visual patterns from red blood cell images
+- Distinguish infected cells from healthy ones
+- Achieve robust classification performance using regularization and normalization techniques
 
 ## Dataset Used:
 - Cell Images for Detecting Malaria- https://www.kaggle.com/datasets/iarunava/cell-images-for-detecting-malaria 
