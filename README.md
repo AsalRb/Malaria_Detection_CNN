@@ -68,15 +68,12 @@ Required:
 ## How to Run
 
 1. Clone this repository
-2. Install dependencies:
+2. Download and place the dataset in the required folder structure
+3. Update the dataset path in the script:
 ```
-pip install -r requirements.txt
+image_directory = r'C:\Users\Asal\Desktop\cell_images'
 ```
-3. Update the image_directory path in the script:
-```
-image_directory = r"C:\path\to\cell_images"
-```
-4. Run:
+4. Run the script:
 ```
 python malaria_cnn.py
 ```
