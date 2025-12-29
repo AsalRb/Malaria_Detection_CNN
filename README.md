@@ -53,9 +53,11 @@ The dataset must be organized as:
 ```
 cell_images/
 ├── Parasitized/
-│ ├── *.png
+│      ├── *.png
+│      └── ...
 └── Uninfected/
-├── *.png
+       ├── *.png
+│      └── ...
 ```
 
 Required:
