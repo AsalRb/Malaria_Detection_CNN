@@ -69,9 +69,13 @@ Required:
 
 1. Clone this repository
 2. Install dependencies:
+'''
 pip install -r requirements.txt
+'''
 3. Update the image_directory path in the script:
+'''
 image_directory = r"C:\path\to\cell_images"
-5. Run:
+'''
+4. Run:
 python malaria_cnn.py
 
