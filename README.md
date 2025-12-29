@@ -52,11 +52,9 @@ The dataset must be organized as:
 
 cell_images/
 ├── Parasitized/
-│   ├── img1.png
-│   ├── ...
+│ ├── *.png
 └── Uninfected/
-    ├── img1.png
-    ├── ...
+├── *.png
 
 Required:
 - Both folders exist
