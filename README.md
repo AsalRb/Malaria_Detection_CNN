@@ -24,3 +24,10 @@ Visualization:
 
 <img width="300" height="475" alt="image (6)" src="https://github.com/user-attachments/assets/783c84ce-e533-4ab7-89b6-44620fff4018" />
 
+## Design Rationale
+- Convolutional layers extract spatial and texture features such as parasite shapes and cell morphology.
+- MaxPooling reduces spatial complexity while preserving important features.
+- Batch Normalization stabilizes training and improves convergence.
+- Dropout (20%) reduces overfitting and improves generalization.
+- Softmax output produces class probabilities suitable for categorical cross-entropy loss.
+
