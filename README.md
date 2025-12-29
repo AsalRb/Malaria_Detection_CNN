@@ -1,9 +1,8 @@
-# Malaria_Detection_CNN
-
+# Malaria Detection using Convolutional Neural Networks (CNN)
 
 ## Project Overview
 
-Malaria is a life-threatening disease caused by Plasmodium parasites and remains a major global health challenge. Manual examination of blood smears under a microscope is time-consuming and highly dependent on expert knowledge.
+Malaria is a life-threatening disease caused by *Plasmodium* parasites and remains a major global health challenge. Manual examination of blood smears under a microscope is time-consuming and highly dependent on expert knowledge.
 
 In this project, a CNN model is trained to:
 
@@ -11,75 +10,87 @@ In this project, a CNN model is trained to:
 - Distinguish infected cells from healthy ones
 - Achieve robust classification performance using regularization and normalization techniques
 
-## Dataset Used:
-- Cell Images for Detecting Malaria: https://www.kaggle.com/datasets/iarunava/cell-images-for-detecting-malaria 
-- a public Kaggle dataset of parastiized and uninfected cell images.
+---
 
+## Dataset Used
+
+- **Cell Images for Detecting Malaria**  
+  https://www.kaggle.com/datasets/iarunava/cell-images-for-detecting-malaria
+- A public Kaggle dataset containing **parasitized** and **uninfected** red blood cell images.
+
+---
 
 ## Model Architecture
+
 The neural network architecture consists of:
-1. Input Layer — 64×64 RGB image
-2. Convolution + MaxPooling Layers × 2
-3. Batch Normalization + Dropout after each block
-4. Flatten Layer
-5. Fully Connected Dense Layers
-- 512 neurons
-- 256 neurons
-6. Output Layer — 2 neurons with softmax for binary classification
 
-Loss Function: Categorical Cross-Entropy / Optimizer: Adam / Metric: Accuracy
+1. Input Layer — 64×64 RGB image  
+2. Convolution + MaxPooling layers × 2  
+3. Batch Normalization + Dropout after each block  
+4. Flatten layer  
+5. Fully connected dense layers:
+   - 512 neurons
+   - 256 neurons  
+6. Output layer — 2 neurons with **softmax** activation for binary classification  
 
-Visualization:
+**Loss Function:** Categorical Cross-Entropy  
+**Optimizer:** Adam  
+**Metric:** Accuracy  
 
-<img width="300" height="475" alt="image (6)" src="https://github.com/user-attachments/assets/783c84ce-e533-4ab7-89b6-44620fff4018" />
+### Model Architecture Visualization
 
+<img width="300" height="475" alt="CNN Architecture" src="https://github.com/user-attachments/assets/783c84ce-e533-4ab7-89b6-44620fff4018" />
+
+---
 
 ## Design Rationale
+
 - Convolutional layers extract spatial and texture features such as parasite shapes and cell morphology.
 - MaxPooling reduces spatial complexity while preserving important features.
 - Batch Normalization stabilizes training and improves convergence.
 - Dropout (20%) reduces overfitting and improves generalization.
 - Softmax output produces class probabilities suitable for categorical cross-entropy loss.
 
+---
 
 ## Training & Performance
 
-The model was trained for 10 epochs with early stopping and learning rate reduction.
+The model was trained for **10 epochs** using early stopping and learning rate reduction.
 
-Train-validation accuracy increases rapidly, and losses decrease steadily, showing good convergence.
+Training and validation accuracy increase rapidly, while losses decrease steadily, indicating good convergence and generalization.
 
-Here are the performance plots generated from training:
+### Training Curves
 
-<img width="720" height="280" alt="14" src="https://github.com/user-attachments/assets/46476d57-5473-4c2f-a38a-5a0c40c89cf5" />
+<img width="720" height="280" alt="Training Performance" src="https://github.com/user-attachments/assets/46476d57-5473-4c2f-a38a-5a0c40c89cf5" />
 
-The model achieved high classification accuracy on the test set and successfully distinguishes infected vs. healthy cells.
+The model achieves a final accuracy of approximately **95–96%** on the test set and successfully distinguishes infected from healthy cells.
 
-Final accuracy reaches ~95–96%.
+---
 
 ## Dataset Structure
-The dataset must be organized as:
+
+The dataset must be organized as follows:
 
 ```
 cell_images/
 ├── Parasitized/
-│      ├── *.png
-│      └── ...
+│ ├── *.png
+│ └── ...
 └── Uninfected/
-       ├── *.png
-       └── ...
+  ├── *.png
+  └── ...
 ```
 
-Required:
-- Both folders exist
-- Images are .png format
-- Correct path provided in your script
+**Labels:**
+- `0` → Parasitized
+- `1` → Uninfected
 
-Labels:
-- 0 → Parasitized
-- 1 → Uninfected
+---
 
-## Requirements:
+## Requirements
+
 Main libraries used:
+
 - numpy
 - opencv-python
 - Pillow
@@ -88,16 +99,15 @@ Main libraries used:
 - tensorflow
 - keras
 
+---
+
 ## How to Run
 
-1. Clone this repository
-2. Download and place the dataset in the required folder structure
+1. Clone this repository  
+2. Download and place the dataset in the required folder structure  
 3. Update the dataset path in the script:
-```
-image_directory = r'C:\Users\Asal\Desktop\cell_images'
-```
+   ```python
+   image_directory = r'C:\Users\Asal\Desktop\cell_images'
 4. Run the script:
-```
-Malaria-Detection-CNN.py
-```
-
+   ```python
+   python malaria_cnn.py
