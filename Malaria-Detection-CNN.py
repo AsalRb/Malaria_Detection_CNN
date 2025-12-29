@@ -139,7 +139,7 @@ hidden2 = keras.layers.Dense(256, activation='relu')(drop3)
 norm4 = keras.layers.BatchNormalization(axis=-1)(hidden2)
 drop4 = keras.layers.Dropout(rate=0.2)(norm4)
 
-out = keras.layers.Dense(2, activation='softmax')(drop4)  # Changed from sigmoid to softmax
+out = keras.layers.Dense(2, activation='softmax')(drop4)  
 
 model = keras.Model(inputs=inp, outputs=out)
 model.compile(optimizer='adam',
@@ -192,11 +192,11 @@ callbacks = [
 
 history = model.fit(X_train,
                     y_train,
-                    batch_size=32,  # Reduced for desktop
+                    batch_size=32,  
                     verbose=1,
-                    epochs=10,  # Increased for better results
+                    epochs=10,  
                     validation_split=0.1,
-                    shuffle=True,  # Changed to True for better training
+                    shuffle=True,  
                     callbacks=callbacks)
 
 # ==============================================
@@ -222,4 +222,5 @@ print("=" * 50)
 model_save_path = 'malaria_cnn_classifier.h5'
 model.save(model_save_path)
 print(f" Model saved to: {os.path.abspath(model_save_path)}")
+
 
