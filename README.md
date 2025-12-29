@@ -72,6 +72,16 @@ Required:
 - Images are .png format
 - Correct path provided in your script
 
+## Requirements:
+Main libraries used:
+- numpy
+- opencv-python
+- Pillow
+- matplotlib
+- scikit-learn
+- tensorflow
+- keras
+
 ## How to Run
 
 1. Clone this repository
