@@ -43,4 +43,4 @@ Train-validation accuracy increases rapidly, and losses decrease steadily, showi
 
 Here are the performance plots generated from training:
 
-<img width="750" height="250" alt="14" src="https://github.com/user-attachments/assets/46476d57-5473-4c2f-a38a-5a0c40c89cf5" />
+<img width="750" height="280" alt="14" src="https://github.com/user-attachments/assets/46476d57-5473-4c2f-a38a-5a0c40c89cf5" />
