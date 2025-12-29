@@ -49,6 +49,7 @@ The model achieved high classification accuracy on the test set and successfully
 
 ## Dataset Structure
 The dataset must be organized as:
+
 cell_images/
 ├── Parasitized/
 │   ├── img1.png
@@ -56,6 +57,7 @@ cell_images/
 └── Uninfected/
     ├── img1.png
     ├── ...
+
 Required:
 - Both folders exist
 - Images are .png format
