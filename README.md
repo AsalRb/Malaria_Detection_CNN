@@ -7,3 +7,16 @@ Malaria is a life-threatening disease caused by parasites transmitted through th
 ## Dataset Used:
 - Cell Images for Detecting Malaria- https://www.kaggle.com/datasets/iarunava/cell-images-for-detecting-malaria 
 - a public Kaggle dataset of parastiized and uninfected cell images.
+
+## Model Architecture
+
+The neural network architecture consists of:
+1. Input Layer — 64×64 RGB image
+2. Convolution + MaxPooling Layers × 2
+3. Batch Normalization + Dropout after each block
+4. Flatten Layer
+5. Fully Connected Dense Layers
+- 512 neurons
+- 256 neurons
+6. Output Layer — 2 neurons with softmax for binary classification
+
