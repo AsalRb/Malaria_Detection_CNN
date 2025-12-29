@@ -12,7 +12,7 @@ In this project, a CNN model is trained to:
 - Achieve robust classification performance using regularization and normalization techniques
 
 ## Dataset Used:
-- Cell Images for Detecting Malaria- https://www.kaggle.com/datasets/iarunava/cell-images-for-detecting-malaria 
+- Cell Images for Detecting Malaria: https://www.kaggle.com/datasets/iarunava/cell-images-for-detecting-malaria 
 - a public Kaggle dataset of parastiized and uninfected cell images.
 
 
