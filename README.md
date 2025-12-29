@@ -22,6 +22,10 @@ The neural network architecture consists of:
 - 256 neurons
 6. Output Layer — 2 neurons with softmax for binary classification
 
+Loss Function: Categorical Cross-Entropy
+Optimizer: Adam
+Metric: Accuracy
+
 Visualization:
 
 <img width="300" height="475" alt="image (6)" src="https://github.com/user-attachments/assets/783c84ce-e533-4ab7-89b6-44620fff4018" />
@@ -75,6 +79,6 @@ image_directory = r'C:\Users\Asal\Desktop\cell_images'
 ```
 4. Run the script:
 ```
-python malaria_cnn.py
+Malaria-Detection-CNN.py
 ```
 
