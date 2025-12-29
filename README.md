@@ -20,3 +20,27 @@ The neural network architecture consists of:
 - 256 neurons
 6. Output Layer — 2 neurons with softmax for binary classification
 
+# Visualization:
+Input (64×64×3)
+↓
+Conv2D (32 filters, 3×3, ReLU)
+→ MaxPooling2D
+→ BatchNorm
+→ Dropout (0.2)
+
+Conv2D (32 filters, 3×3, ReLU)
+→ MaxPooling2D
+→ BatchNorm
+→ Dropout (0.2)
+
+Flatten
+
+Dense (512, ReLU)
+→ BatchNorm
+→ Dropout (0.2)
+
+Dense (256, ReLU)
+→ BatchNorm
+→ Dropout (0.2)
+
+Output Dense (2, softmax)
