@@ -54,6 +54,8 @@ Here are the performance plots generated from training:
 
 The model achieved high classification accuracy on the test set and successfully distinguishes infected vs. healthy cells.
 
+Final accuracy reaches ~95–96%.
+
 ## Dataset Structure
 The dataset must be organized as:
 
