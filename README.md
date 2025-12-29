@@ -77,5 +77,7 @@ pip install -r requirements.txt
 image_directory = r"C:\path\to\cell_images"
 ```
 4. Run:
+```
 python malaria_cnn.py
+```
 
