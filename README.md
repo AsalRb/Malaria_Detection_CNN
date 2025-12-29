@@ -44,3 +44,20 @@ Train-validation accuracy increases rapidly, and losses decrease steadily, showi
 Here are the performance plots generated from training:
 
 <img width="720" height="280" alt="14" src="https://github.com/user-attachments/assets/46476d57-5473-4c2f-a38a-5a0c40c89cf5" />
+
+The model achieved high classification accuracy on the test set and successfully distinguishes infected vs. healthy cells.
+
+## Dataset Structure
+The dataset must be organized as:
+cell_images/
+├── Parasitized/
+│   ├── img1.png
+│   ├── ...
+└── Uninfected/
+    ├── img1.png
+    ├── ...
+Required:
+- Both folders exist
+- Images are .png format
+- Correct path provided in your script
+
