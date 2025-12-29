@@ -22,7 +22,7 @@ The neural network architecture consists of:
 - 256 neurons
 6. Output Layer — 2 neurons with softmax for binary classification
 
-Loss Function: Categorical Cross-Entropy/ Optimizer: Adam/ Metric: Accuracy
+Loss Function: Categorical Cross-Entropy / Optimizer: Adam / Metric: Accuracy
 
 Visualization:
 
