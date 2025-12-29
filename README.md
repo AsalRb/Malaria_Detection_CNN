@@ -34,3 +34,13 @@ Visualization:
 - Dropout (20%) reduces overfitting and improves generalization.
 - Softmax output produces class probabilities suitable for categorical cross-entropy loss.
 
+
+## Training & Performance
+
+The model was trained for 10 epochs with early stopping and learning rate reduction.
+
+Train-validation accuracy increases rapidly, and losses decrease steadily, showing good convergence.
+
+Here are the performance plots generated from training:
+
+<img width="1065" height="396" alt="14" src="https://github.com/user-attachments/assets/46476d57-5473-4c2f-a38a-5a0c40c89cf5" />
