@@ -72,6 +72,10 @@ Required:
 - Images are .png format
 - Correct path provided in your script
 
+Labels:
+- 0 → Parasitized
+- 1 → Uninfected
+
 ## Requirements:
 Main libraries used:
 - numpy
