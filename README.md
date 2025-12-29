@@ -110,4 +110,4 @@ Main libraries used:
    image_directory = r'C:\Users\Asal\Desktop\cell_images'
 4. Run the script:
    ```python
-   python malaria_cnn.py
+   Malaria-Detection-CNN.py
